@@ -8,8 +8,7 @@ body {
     rgb(242, 112, 156),
     rgb(255, 148, 114)
   );
-  min-height: 100vh;
-  width: 100vw;
+  width: 99vw;
   align-items: center;
 }
 

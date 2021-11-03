@@ -16,6 +16,6 @@ router.post("/", addBlogPost);
 router.get("/:id", getSinglePost);
 router.patch("/:id", updateSingleBlogPost);
 router.delete("/:id", removeSingleBlogPost);
-router.patch("/:id/likeedBlogPost", likeBlogPost);
+router.patch("/:id/likedBlogPost", likeBlogPost);
 
 export default router;

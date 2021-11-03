@@ -10,11 +10,11 @@ dotenv.config();
 
 const app = express();
 
-app.use("/api/blogs", blogPosts);
-
 app.use(bodyParser.json({ limit: "50mb", extended: true }));
 app.use(bodyParser.urlencoded({ limit: "50mb", extended: true }));
 app.use(cors());
+
+app.use("/api/blogs", blogPosts);
 
 const DB_CONNECTION = process.env.DATABASE_URL;
 const PORT = process.env.PORT || 6000;
