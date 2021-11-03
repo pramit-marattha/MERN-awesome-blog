@@ -4,7 +4,7 @@ const blogSchema = mongoose.Schema({
   title: String,
   description: String,
   tags: [String],
-  selectedFile: String,
+  fileUpload: String,
   upvote: {
     type: Number,
     default: 0,
